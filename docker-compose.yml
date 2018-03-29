@@ -61,7 +61,8 @@ services:
       - 'yarn run dev'
     environment:
       - NODE_ENV=development
-      - EVENTS_URL=http://webhooks:4004/events
+      - WEBHOOKS_URL=http://webhooks:4004
+      - QUIZZES_URL=http://quizzes:4001
       - PORT=4002
       - DATABASE_URL=postgres://codaisseur:pass@postgres:5432/codaisseur
     ports:
