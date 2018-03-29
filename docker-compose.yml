@@ -38,6 +38,7 @@ services:
       - 'yarn run dev'
     environment:
       - NODE_ENV=development
+      - EVENTS_URL=http://webhooks:4004/events
       - PORT=4001
       - DATABASE_URL=postgres://codaisseur:pass@postgres:5432/codaisseur
     ports:
@@ -60,6 +61,7 @@ services:
       - 'yarn run dev'
     environment:
       - NODE_ENV=development
+      - EVENTS_URL=http://webhooks:4004/events
       - PORT=4002
       - DATABASE_URL=postgres://codaisseur:pass@postgres:5432/codaisseur
     ports:
@@ -83,6 +85,7 @@ services:
       - 'yarn run dev'
     environment:
       - NODE_ENV=development
+      - EVENTS_URL=http://webhooks:4004/events
       - PORT=4003
       - DATABASE_URL=postgres://codaisseur:pass@postgres:5432/codaisseur
     ports:
